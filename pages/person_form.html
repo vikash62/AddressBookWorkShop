@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/person_form.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Person_Address_Form</title>
+    <script defer src="../js/person_form.js"></script>
+	</head>
+	<body>
+		<header class = "header-content header">
+    	<div class = "logo-content">
+        <img src="../assets/download.png" width="50px" alt="">
+        <div>
+          <span class = "emp-text">ADDRESS</span><br>
+          <span class="emp-text emp-payroll">BOOK</span>
+        </div>
+    	</div>
+		</header>
+			<div id="formId"  class = "form-content">
+    		<form class = "form" action="#"  onreset="resetForm()" onsubmit="save()"> 
+        	<div class="form-head">PERSON ADDRESS FORM
+        		<a href="../pages/home.html" class="cancel-button">
+        		<img src="../assets/icons8-cancel.svg"  width="44px" height="42px" alt="">
+        		</a>
+        	</div>
+					<div class="content">
+        	<div class = "row-content">
+            <label class = "text" for = "name">Full Name</label>
+					</div>
+					<div class="row-content">
+            <input class = "input" type = "text" id="name" name="name"
+            placeholder="Your name.." required>
+            <error-output class="text-error" for="text"></error-output>
+					</div>
+					<div class="row-content">
+						<label class="text" for = "phone">Phone Number</label>
+					</div>
+					<div class="row-content">
+						<input class="input" type = "text" id="phone" name="phone"
+            placeholder="Your Phone No.." required>
+					</div>
+					<div class="row-content">
+						<label class="text" for="address">Address</label>
+					</div>
+					<div class="row-content">
+						<input class="address_input" type="text" id="address" name="address"
+						placeholder="Your Address.." required>
+					</div>
+					<div class="row-content">
+						<label class="text" for="city">City</label>
+						<label class="text" for="state">State</label>
+						<label class="text" for="zip_code">Zip Code</label>
+					</div>
+					<div class="row-content">
+						<div>
+							<select id="city" name="City">
+								<option value="Agra">Agra</option>
+								<option value="Amritsar">Amritsar</option>
+								<option value="Aizawl">Aizawl</option>
+								<option value="Bhopal">Bhopal</option>
+								<option value="Bhubaneshwar">Bhubaneshwar</option>
+								<option value="Garhmukteshwarai">Garhmukteshwarai</option>
+							</select>
+							<select id="state" name="State">
+								<option value="Assam">Assam</option>
+								<option value="Andhra Pradesh">Andhra Pradesh</option>
+								<option value="Arunachal Pradesh">Arunachal Pradesh</option>
+								<option value="Bihar">Bihar</option>
+								<option value="Chattisgarh">Chattisgarh</option>
+							</select>
+							<input class="small_input" type="text" id="zip" name="zip"
+							placeholder="Zip Code...">
+						</div>
+					</div>
+					<div class="buttonParent">
+						<div class="submit-reset">
+							<button type="submit" class="button submitButton" id="submitButton">Add</button>
+							<button type="reset" class="resetButton button" id="resetButton">Reset</button>
+						</div>
+					</div>
+					
+					</div>
+				</form>
+					</div>
+					<footer class="footer-content">
+								<div>
+									<span class = "emp-text">     </span><br>
+								</div>
+							</div>
+						
+					</footer>
+    
+	</body>
+
+</html>
