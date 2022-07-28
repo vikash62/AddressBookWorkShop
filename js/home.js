@@ -37,27 +37,6 @@ for(const addressBookData of addressBookList){
 
 }
 
-// const createAddressBookJSON = () => {
-// 	let addressBookListLocal = [
-// 		{
-// 			_name: 'Rameez Shaikh',
-// 			_phone: '+91 8805258754',
-// 			_address: 'Dosti Enclave, Kurla',
-// 			_state: 'Assam',
-// 			_city: 'Amritsar',
-// 			_zip: '400612',
-// 		},
-// 		{
-// 		_name: 'Alina Syed',
-// 		_phone: '+91 8805258754',
-// 		_address: 'Piranha Enclave, Kismat',
-// 		_state: 'Andhra Pradesh',
-// 		_city: 'Agra',
-// 		_zip: '400452',
-// 		}
-// 	];
-// 	return addressBookListLocal;
-// }
 
 const remove=(node)=> {
 	let personData = addressBookList.find(addressBookData=>addressBookData._name==node.name);
